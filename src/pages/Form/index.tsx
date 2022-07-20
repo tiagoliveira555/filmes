@@ -34,9 +34,7 @@ export const Form = () => {
       },
       body: JSON.stringify(body),
     };
-
-    console.log(body)
-
+    
     fetch(`https://tiagoliveira555-dsmovie.herokuapp.com/scores`, method).then(
       () => navigate("/")
     );
