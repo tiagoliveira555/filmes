@@ -1,18 +1,18 @@
 .container {
-  margin: 30px auto 0;
+  margin: 30px auto;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 200px;
 }
 
 .img_container {
   border: 1px solid #1d5e69;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -40,6 +40,7 @@
 
 .numbers p,
 .numbers span {
+  font-size: 1.2rem;
   color: #1d5e69;
   font-weight: bold;
 }
