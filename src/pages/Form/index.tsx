@@ -34,7 +34,7 @@ export const Form = () => {
       },
       body: JSON.stringify(body),
     };
-    
+
     fetch(`https://tiagoliveira555-dsmovie.herokuapp.com/scores`, method).then(
       () => navigate("/")
     );
@@ -43,6 +43,7 @@ export const Form = () => {
   return (
     <div className={styles.container}>
       <img src={movie?.image} alt={movie?.title} />
+      <h2>{movie?.title}</h2>
       <form className={styles.form}>
         <div className={styles.form_inputs}>
           <label htmlFor="email">Email:</label>
@@ -56,7 +57,7 @@ export const Form = () => {
           />
         </div>
         <div className={styles.form_inputs}>
-          <label htmlFor="score">Estrelas:</label>
+          <label htmlFor="score">Avaliação:</label>
           <select
             onChange={(e) => setScore(e.target.value)}
             className={styles.select}
