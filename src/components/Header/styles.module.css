@@ -1,0 +1,43 @@
+.header {
+  background-color: #1d5e69;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.github img {
+  width: 30px;
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .github img {
+    width: 28px;
+  }
+
+  .github span {
+    display: none;
+  }
+}

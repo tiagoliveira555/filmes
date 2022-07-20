@@ -1,0 +1,45 @@
+.container {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.img_container {
+  border: 1px solid #1d5e69;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.img_container:enabled:hover {
+  transform: scale(1.2);
+}
+
+.img_container:disabled {
+  background-color: #ddd;
+  opacity: 0.3;
+}
+
+.img_right {
+  transform: rotate(180deg);
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.numbers p,
+.numbers span {
+  color: #1d5e69;
+  font-weight: bold;
+}
