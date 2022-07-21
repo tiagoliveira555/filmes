@@ -14,7 +14,7 @@ export const Form = () => {
   const [score, setScore] = useState("");
 
   useEffect(() => {
-    fetch(`https://tiagoliveira555-dsmovie.herokuapp.com/movies/${id}`)
+    fetch(`${UrlBase}/movies/${id}`)
       .then((res) => res.json())
       .then((data) => setMovie(data));
   }, [id]);
