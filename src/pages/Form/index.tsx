@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Movie } from "../../types/Movie";
+import { UrlBase } from "../../utils/UrlBase";
 import styles from "./styles.module.css";
 
 export const Form = () => {
@@ -35,9 +36,7 @@ export const Form = () => {
       body: JSON.stringify(body),
     };
 
-    fetch(`https://tiagoliveira555-dsmovie.herokuapp.com/scores`, method).then(
-      () => navigate("/")
-    );
+    fetch(`${UrlBase}/scores`, method).then(() => navigate("/"));
   };
 
   return (

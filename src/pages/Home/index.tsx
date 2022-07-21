@@ -5,6 +5,7 @@ import { Pagination } from "../../components/Pagination";
 
 import { Movie } from "../../types/Movie";
 import { Pages } from "../../types/Page";
+import { UrlBase } from "../../utils/UrlBase";
 
 import styles from "./styles.module.css";
 
@@ -27,9 +28,7 @@ export const Home = () => {
   });
 
   useEffect(() => {
-    fetch(
-      `https://tiagoliveira555-dsmovie.herokuapp.com/movies?page=${numberPage}&size=12&sort=id`
-    )
+    fetch(`${UrlBase}/movies?page=${numberPage}&size=12&sort=id`)
       .then((res) => res.json())
       .then((data) => {
         setMovies(data.content);
